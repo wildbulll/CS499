@@ -1,4 +1,21 @@
+/* Center the content */
+.center {
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the container fill the full height of the viewport */
+}
 
+/* Style the link */
+.center a {
+    font-size: 20px; /* Adjust the font size */
+    color: #0073e6; /* Set the link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.center a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #8A9A5B;
