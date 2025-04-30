@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Paragraph styling */
+p {
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 20px;
+}
+
+/* Navigation links */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
