@@ -1,107 +1,96 @@
+body, h1, p, a, ol, li {
+    margin: 0;
+    paddding: 0;
+    box-sizing: border-box;
+}
+
 /* Body Styling */
 body {
-    font-family: 'Juipter', sans-serif;
-    background-color: #F9F8F2;
+    font-family: 'Inter', sans-serif;
+    background: #F9F8F2;
     display: flex; /*Use flexbox for page layout*/
     flex-direction: column; /*Stack children vertically*/
     min-height: 100vh; /*Make sure body takes full viewport height*/
-    margin: 0;
-    padding: 0;
 }
 
 /* Navigation Bar Styling */
 .navbar {
-    background-color: #2B435A;
-    padding: 1rem 2rem;
+    background: #2B435A;
     display: flex;
     justify-content: center; /*Center nav items*/
-    align-items: center;
-    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Subtle shadow*/
 }
 
 .navbar-link {
     color: #fff; /*White text for links*/
-     text-decoration: none;
+    text-decoration: none;
     padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
     border-radius: 6px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background 0.2s;
 }
 
 .navbar-link:hover {
-    background-color: #555; /*Darker on hover*/
-    color: #fff;
+    background: #555; /*Darker on hover*/
 }
 
 /* Main Content Area Wrapper for Image and Text */
 .main-content-area {
     flex: 1; 
-    width: 100vw;
-    max-width: 1200px; /*Max width for the content area*/
-    margin: 20px auto; /*Center the content area itself*/
+    width: 100%;
+    max-width: 900px; /*Max width for the content area*/
+    margin: 2rem auto 0 auto;
     display: flex; /*Use flexbox for side-by-side layout*/
-    flex-direction: column; /*Default to column for small screens*/
-    align-items: flex-start;
-    background-color: #fff; /*White background for the content area*/
+    background: #fff; /*White background for the content area*/
     border-radius: 2px; /*Rounded corners for the content area*/
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /*More prominent shadow*/
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
 }
 
 /* Media query for larger screens to enable side-by-side layout */
-@media (min-width: 768px) {
+@media (min-width: 700px) {
     .main-content-area {
         flex-direction: row; /*Row layout for larger screens*/
         align-items: flex-start; /*Align items to the top*/
-        text-align: left; /*Reset text alignment for content*/
-    }
-    .profile-image-container {
-        margin-right: 40px; /*Space between image and text*/
-        margin-bottom: 0; /*Remove bottom margin for row layout*/
-    }
-    .portfolio-text-content {
-        text-align: left; /*Text aligns left in desktop view*/
     }
 }
 
-/* Profile Image Styling */
+/* Image Syling */
 .profile-image-container {
-    flex-shrink: 0; /*Prevent image from shrinking*/
-    margin-bottom: 20px; /*Space below image for column layout*/
-    text-align: center; /*Center image for column layout*/
+    flex-shrink: 0;
 }
+
 .profile-image {
-    width: 200px; /*Fixed width for the image*/
-    height: 200px; /*Fixed height for the image*/
-    border-radius: 20px; /Rounded corners*/ 
+    width: 180px; /*Fixed width for the image*/
+    height: 180px; /*Fixed height for the image*/
+    border-radius: 20px; /*Rounded corners*/ 
     object-fit: cover; /*Cover the area, crop if necessary*/
-    border: 5px solid #305078; /*Blue border around the image*/
+    border: 4px solid #305078; /*Blue border around the image*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth*/
 }
 
 /* Portfolio Text Content Styling */
 .portfolio-text-content {
-    flex-grow: 1; / Allow text content ot take remaining space*/
+    flex: 1; / Allow text content ot take remaining space*/
     text-align: left; /*Center text for small screens*/
 }
 
 /* Header Styling */
 h1 {
     color: #2B435A;
-    text-align: center;
-    font-size: 2.5rem; /*Larger font size for the main title*/
-    font-weight: 700; /*Bold font*/
-    margin-bottom: 20px; /*Space below the header*/
+    margin-bottom: 1rem; /*Space below the header*/
 }
 
 /* Paragraph Styling */
-p {
+p, ol {
     color: #8A8E75;
     line-height: 1.6;
-    max-width: 800px; /*Limit paragraph width for readability*/
-    margin: 10px auto; /*Center horizontally, maintain vertical margin*/
-    padding: 0 15px; /*Horizontal padding for smaller screens*/
+    margin-bttom: 1rem;
 }
 
 /* Link Styling */
@@ -117,31 +106,30 @@ a:hover {
 
 /* GitHub Link Styling */
 .github-link {
-    font-size: 1.25rem; /* Slightly larger font for the link */
-    font-weight: 600; /* Semi-bold */
-    display: inline-block; /* Allows padding and margins */
-    padding: 10px 20px;
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f0f0f0; /* Light background for the link button */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    background: #;
+    color: #305078;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+    text-decoration: none;
 }
 
 .github-link:hover {
-    background-color: #e0e0e0; /* Slightly darker on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+    background: #e0e0e0; /* Slightly darker on hover */
 }
 
 /* Footer Styling */
 footer {
-    width: 100vw;
-    text-align: left;
-    background-color: #BBBE97;
+    background: #BBBE97;
     color: #D7D6D9; 
-    padding: 20px 0;
+    padding: 2rem 2rem;
     font-size: 0.9em; /*Smaller font size for footer*/
+    text-align: left;
+    width: 100%;
     margin-top: auto;
-    position: relative; /* ensure it's within normal flow */
-    left: 0;
+    box-sizing: border-box;
 }
 
