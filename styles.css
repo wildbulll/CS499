@@ -67,7 +67,7 @@ body {
 .profile-image {
     width: 180px;
     height: 180px;
-    border-radius: 20px; /* Square with rounded corners */
+    border-radius: 50%; /*Round*/
     object-fit: cover;
     border: 4px solid #305078;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
