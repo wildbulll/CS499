@@ -11,19 +11,85 @@ body {
     min-height: 100vh; /*Make sure body takes full viewport height*/    
 }
 
-/* Content Wrapper - Main */
-.content-wrapper {
-    flex-grow: 1; /*Allow this section to grow and push the footer down*/
-    display: flex; /*Flexbox for its children (header, main)*/
-    flex-direction: column; /*Stack header and main vertically*/
-    align-items: center; /*Center children horizontally within this wrapper*/
-    padding-top: 20px; /*Add some padding from the top*/
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #333; /*Dark background for navbar*/
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center; /* Center nav items */
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Subtle shadow*/
+}
+
+.navbar-link {
+    color: #fff; /*White text for links*/
+     text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #555; /*Darker on hover*/
+    color: #fff;
+}
+
+/* Main Content Area Wrapper for Image and Text */
+.main-content-area {
+    flex-grow: 1; /*Allows this section to fill available space*/
+    display: flex; /*Use flexbox for side-by-side layout*/
+    flex-direction: column; /*Default to column for small screens*/
+    align-items: center; /*Center items for column layout*/
+    padding: 20px;
+    max-width: 1200px; /*Max width for the content area*/
+    margin: 20px auto; /*Center the content area itself*/
+    background-color: #fff; /*White background for the content area*/
+    border-radius: 2px; /*Rounded corners for the content area*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /*More prominent shadow*/
+}
+
+/* Media query for larger screens to enable side-by-side layout */
+@media (min-width: 768px) {
+    .main-content-area {
+        flex-direction: row; /*Row layout for larger screens*/
+        align-items: flex-start; /*Align items to the top*/
+        text-align: left; /*Reset text alignment for content*/
+    }
+    .profile-image-container {
+        margin-right: 40px; /*Space between image and text*/
+        margin-bottom: 0; /*Remove bottom margin for row layout*/
+    }
+    .portfolio-text-content {
+        text-align: left; /*Text aligns left in desktop view*/
+    }
+}
+
+/* Profile Image Styling */
+.profile-image-container {
+    flex-shrink: 0; /*Prevent image from shrinking*/
+    margin-bottom: 20px; /*Space below image for column layout*/
+    text-align: center; /*Center image for column layout*/
+}
+.profile-image {
+    width: 200px; /*Fixed width for the image*/
+    height: 200px; /*Fixed height for the image*/
+    border-radius: 50%; /*Make it circular*/
+    object-fit: cover; /*Cover the area, crop if necessary*/
+    border: 5px solid #305078; /*Blue border around the image*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth*/
+}
+
+/* Portfolio Text Content Styling */
+.portfolio-text-content {
+    flex-grow: 1; / Allow text content ot take remaining space*/
+    text-align: center; /*Center text for small screens*/
 }
 
 /* Header Styling */
 h1 {
     color: #305078;
-    padding: 20px 0;
     font-size: 2.5rem; /*Larger font size for the main title*/
     font-weight: 700; /*Bold font*/
     margin-bottom: 20px; /*Space below the header*/
