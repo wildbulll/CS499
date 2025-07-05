@@ -74,7 +74,7 @@ body {
 .profile-image {
     width: 200px; /*Fixed width for the image*/
     height: 200px; /*Fixed height for the image*/
-    border-radius: 50%; /*Make it circular*/
+    border-radius: 20px; /Rounded corners*/ 
     object-fit: cover; /*Cover the area, crop if necessary*/
     border: 5px solid #305078; /*Blue border around the image*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth*/
