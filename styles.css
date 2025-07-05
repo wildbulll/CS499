@@ -62,7 +62,7 @@ body {
 /* Image Styling */
 .profile-image-container {
     flex-shrink: 0;
-    margin-right: 2.5rem;
+    margin-right: 3.5rem;
 }
 .profile-image {
     width: 180px;
@@ -76,7 +76,7 @@ body {
 /* Portfolio Text Content Styling */
 .portfolio-text-content {
     flex: 1;
-    text-align: left;
+    text-align: center;
     min-width: 0;
     display: flex;
     flex-direction: column;
