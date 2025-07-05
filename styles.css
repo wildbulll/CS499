@@ -13,7 +13,7 @@ body {
 
 /* Navigation Bar Styling */
 .navbar {
-    background-color: #333; /*Dark background for navbar*/
+    background-color: #D6AD60; /*Dark background for navbar*/
     padding: 1rem 2rem;
     display: flex;
     justify-content: center; /* Center nav items */
