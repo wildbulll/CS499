@@ -1,58 +1,78 @@
+/* Body Styling */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #E2E2DB;
+    background-color: #ececdf;
     margin: 0;
     padding: 0;
     /*Center all inline and inline-block content horizontally*/
     text-align: center;
+    display: flex /*Use flexbox for page layout*/;
+    flex-direction: column /*Stack children vertically*/;
+    min-height: 100vh; /*Make sure body takes full viewport height*/    
 }
 
-/* Header styling */
+/* Content Wrapper - Main */
+.content-wrapper {
+    flex-grow: 1; /*Allow this section to grow and push the footer down*/
+    display: flex; /*Flexbox for its children (header, main)*/
+    flex-direction: column; /*Stack header and main vertically*/
+    align-items: center; /*Center children horizontally within this wrapper*/
+    padding-top: 20px; /*Add some padding from the top*/
+}
+
+/* Header Styling */
 h1 {
-    color: #333;
+    color: #5C757A;
     padding: 20px 0;
+    font-size: 2.5rem; /*Larger font size for the main title*/
+    font-weight: 700; /*Bold font*/
+    margin-bottom: 20px; /*Space below the header*/
 }
 
-/* Paragraph styling */
+/* Paragraph Styling */
 p {
-    color: #555;
+    color: #8A8E75;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 10px auto; /*center horizontally, maintain vertical margin*/
+    max-width: 800px; /*Limit paragraph width for readability*/
+    margin: 10px auto; /*Center horizontally, maintain vertical margin*/
+    padding: 0 15px; /*Horizontal padding for smaller screens*/
 }
 
-/* Navigation links */
+/* Link Styling */
 a {
     color: #59705B;
     text-decoration: none;
+    transition: text-decoration 0.3s ease; /*Smooth transition for hover effect*/
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Specific centering for elements that need Flexbox (like the example link) */
-/* This class will only center horizontally if applied to a block element */
-.center-horizontal {
-     display: flex;
-     justify-content: center; 
+/* GitHub Link Styling */
+.github-link {
+    font-size: 1.25rem; /* Slightly larger font for the link */
+    font-weight: 600; /* Semi-bold */
+    display: inline-block; /* Allows padding and margins */
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light background for the link button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Style the link within the centered container */
-.center-horizontal a {
-    font-size: 20px; /* Adjust the font size */
-    color: #0073e6; /* Set the link color */
-    text-decoration: none; /* Remove underline */
+.github-link:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
 }
 
-.center-horizontal a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-
-.footer {
-    font-color: #5C757A;
+/* Footer Styling */
+footer {
+    color: #5C757A; 
     padding: 20px 0;
-    margin-top: 40px;
-    font-size: 0.9em;
+    margin-top: auto; /*Push footer to the bottom*/
+    font-size: 0.9em; /*Smaller font size for footer*/
+    background-color: rgba(126, 122, 109, 0.2); /*Original color with 20% opacity*/
+    width: 100%; /* Ensure footer spans full width */
 }
+
