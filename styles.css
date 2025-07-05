@@ -40,7 +40,7 @@ body {
     width: 100%;
     display: flex; /*Use flexbox for side-by-side layout*/
     flex-direction: column; /*Default to column for small screens*/
-    align-items: center; /*Center items for column layout*/
+    align-items: flex-start;
     padding: 20px;
     max-width: 1200px; /*Max width for the content area*/
     margin: 20px auto; /*Center the content area itself*/
@@ -83,7 +83,7 @@ body {
 /* Portfolio Text Content Styling */
 .portfolio-text-content {
     flex-grow: 1; / Allow text content ot take remaining space*/
-    text-align: center; /*Center text for small screens*/
+    text-align: left; /*Center text for small screens*/
 }
 
 /* Header Styling */
