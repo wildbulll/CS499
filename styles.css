@@ -128,7 +128,7 @@ a:hover {
 footer {
     background: #BBBE97;
     color: #f0f0f0 !important;
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem;
     font-size: 0.9rem;
     text-align: left;
     width: 100%;
@@ -139,5 +139,4 @@ footer {
 }
 p2 {
     color: #2B435A;
-    font-weight: bold;
 }
