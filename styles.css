@@ -1,7 +1,7 @@
 /* Body Styling */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #F8F6EE;
+    background-color: #F9F8F2;
     margin: 0;
     padding: 0;
     /*Center all inline and inline-block content horizontally*/
@@ -13,10 +13,10 @@ body {
 
 /* Navigation Bar Styling */
 .navbar {
-    background-color: #D6AD60; /*Dark background for navbar*/
+    background-color: #806C40;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: center; /* Center nav items */
+    justify-content: center; /*Center nav items*/
     align-items: center;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Subtle shadow*/
@@ -89,7 +89,7 @@ body {
 
 /* Header Styling */
 h1 {
-    color: #305078;
+    color: #2B435A;
     font-size: 2.5rem; /*Larger font size for the main title*/
     font-weight: 700; /*Bold font*/
     margin-bottom: 20px; /*Space below the header*/
@@ -134,11 +134,11 @@ a:hover {
 
 /* Footer Styling */
 footer {
-    color: #5C757A; 
+    color: #D7D6D9; 
     padding: 20px 0;
     margin-top: auto; /*Push footer to the bottom*/
     font-size: 0.9em; /*Smaller font size for footer*/
-    background-color: rgba(126, 122, 109, 0.2); /*Original color with 20% opacity*/
+    background-color: #BBBE97;
     width: 100%; /* Ensure footer spans full width */
 }
 
