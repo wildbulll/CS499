@@ -6,8 +6,8 @@ body {
     padding: 0;
     /*Center all inline and inline-block content horizontally*/
     text-align: center;
-    display: flex /*Use flexbox for page layout*/;
-    flex-direction: column /*Stack children vertically*/;
+    display: flex; /*Use flexbox for page layout*/
+    flex-direction: column; /*Stack children vertically*/
     min-height: 100vh; /*Make sure body takes full viewport height*/    
 }
 
