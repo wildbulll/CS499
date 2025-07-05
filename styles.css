@@ -2,13 +2,11 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F9F8F2;
-    margin: 0;
-    padding: 0;
-    /*Center all inline and inline-block content horizontally*/
-    text-align: center;
     display: flex; /*Use flexbox for page layout*/
     flex-direction: column; /*Stack children vertically*/
-    min-height: 100vh; /*Make sure body takes full viewport height*/    
+    min-height: 100vh; /*Make sure body takes full viewport height*/
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation Bar Styling */
@@ -38,7 +36,8 @@ body {
 
 /* Main Content Area Wrapper for Image and Text */
 .main-content-area {
-    flex-grow: 1; /*Allows this section to fill available space*/
+    flex-: 1; 
+    width: 100%;
     display: flex; /*Use flexbox for side-by-side layout*/
     flex-direction: column; /*Default to column for small screens*/
     align-items: center; /*Center items for column layout*/
@@ -134,11 +133,11 @@ a:hover {
 
 /* Footer Styling */
 footer {
+    width: 100%;
+    text-align: left;
+    background-color: #BBBE97;
     color: #D7D6D9; 
     padding: 20px 0;
-    margin-top: auto; /*Push footer to the bottom*/
     font-size: 0.9em; /*Smaller font size for footer*/
-    background-color: #BBBE97;
-    width: 100%; /* Ensure footer spans full width */
 }
 
