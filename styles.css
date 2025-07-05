@@ -1,6 +1,7 @@
+/* Reset some browser defaults */
 body, h1, p, a, ol, li {
     margin: 0;
-    paddding: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,23 +9,23 @@ body, h1, p, a, ol, li {
 body {
     font-family: 'Inter', sans-serif;
     background: #F9F8F2;
-    display: flex; /*Use flexbox for page layout*/
-    flex-direction: column; /*Stack children vertically*/
-    min-height: 100vh; /*Make sure body takes full viewport height*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Navigation Bar Styling */
 .navbar {
     background: #2B435A;
     display: flex;
-    justify-content: center; /*Center nav items*/
+    justify-content: center;
     gap: 1rem;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Subtle shadow*/
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-link {
-    color: #fff; /*White text for links*/
+    color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -32,71 +33,73 @@ body {
 }
 
 .navbar-link:hover {
-    background: #555; /*Darker on hover*/
+    background: #555;
 }
 
 /* Main Content Area Wrapper for Image and Text */
 .main-content-area {
-    flex: 1; 
+    flex: 1;
+    max-width: 1000px;
     width: 100%;
     margin: 2rem auto 0 auto;
-    display: flex; /*Use flexbox for side-by-side layout*/
-    background: #fff; /*White background for the content area*/
-    border-radius: 2px; /*Rounded corners for the content area*/
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /*More prominent shadow*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     padding: 2rem;
     gap: 2rem;
 }
 
-/* Media query for larger screens to enable side-by-side layout */
 @media (min-width: 700px) {
     .main-content-area {
-        flex-direction: row; /*Row layout for larger screens*/
-        align-items: flex-start; /*Align items to the top*/
+        flex-direction: row;
+        align-items: flex-start;
     }
 }
 
-/* Image Syling */
+/* Image Styling */
 .profile-image-container {
     flex-shrink: 0;
 }
-
 .profile-image {
-    width: 180px; /*Fixed width for the image*/
-    height: 180px; /*Fixed height for the image*/
-    border-radius: 50px; /*Rounded corners*/ 
-    object-fit: cover; /*Cover the area, crop if necessary*/
-    border: 4px solid #305078; /*Blue border around the image*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth*/
+    width: 180px;
+    height: 180px;
+    border-radius: 20px; /* Square with rounded corners */
+    object-fit: cover;
+    border: 4px solid #305078;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Portfolio Text Content Styling */
 .portfolio-text-content {
-    flex: 1; / Allow text content ot take remaining space*/
-    text-align: left; /*Center text for small screens*/
+    flex: 1;
+    text-align: left;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* Header Styling */
 h1 {
     color: #2B435A;
-    margin-bottom: 1rem; /*Space below the header*/
+    margin-bottom: 1rem;
 }
 
-/* Paragraph Styling */
+/* Paragraph and List Styling */
 p, ol {
     color: #8A8E75;
     line-height: 1.6;
-    margin-bttom: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Link Styling */
 a {
     color: #59705B;
     text-decoration: none;
-    transition: text-decoration 0.3s ease; /*Smooth transition for hover effect*/
+    transition: text-decoration 0.3s ease;
 }
 
 a:hover {
@@ -106,7 +109,7 @@ a:hover {
 /* GitHub Link Styling */
 .github-link {
     display: inline-block;
-    background: #;
+    background: #f0f0f0;
     color: #305078;
     font-weight: 600;
     padding: 0.5em 1em;
@@ -115,20 +118,20 @@ a:hover {
     transition: background 0.2s;
     text-decoration: none;
 }
-
 .github-link:hover {
-    background: #576B86; /*Differnet color on hover*/
+    background: #e0e0e0;
 }
 
 /* Footer Styling */
 footer {
     background: #BBBE97;
-    color: #F9F8F2; 
+    color: #F9F8F2;
     padding: 2rem 2rem;
-    font-size: 0.9em; /*Smaller font size for footer*/
+    font-size: 0.9em;
     text-align: left;
     width: 100%;
     margin-top: auto;
     box-sizing: border-box;
+    position: relative;
+    left: 0;
 }
-
