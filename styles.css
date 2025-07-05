@@ -1,6 +1,6 @@
 /* Body Styling */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Juipter', sans-serif;
     background-color: #F9F8F2;
     display: flex; /*Use flexbox for page layout*/
     flex-direction: column; /*Stack children vertically*/
@@ -139,5 +139,6 @@ footer {
     color: #D7D6D9; 
     padding: 20px 0;
     font-size: 0.9em; /*Smaller font size for footer*/
+    margin-top: auto;
 }
 
