@@ -136,7 +136,7 @@ footer {
     width: 100%;
     text-align: left;
     background-color: #BBBE97;
-    color: #D7D6D9; 
+    font-color: #D7D6D9; 
     padding: 20px 0;
     font-size: 0.9em; /*Smaller font size for footer*/
 }
