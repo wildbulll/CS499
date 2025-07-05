@@ -18,7 +18,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #8A9A5B;
+    background-color: #E2E2DB;
     margin: 0;
     padding: 0;
 }
@@ -45,4 +45,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+.footer
+{
+    font-color: #9AAEA3;
 }
