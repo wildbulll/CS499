@@ -149,8 +149,9 @@ footer {
     position: relative;
     left: 0;
 }
-p2 {
+footer p {
     color: #2B435A;
+    margin 0;
 }
 
 .main-content-area ul {
