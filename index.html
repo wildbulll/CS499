@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#home" class="navbar-link">Home</a>
-        <a href="#about" class="navbar-link">About</a>
-        <a href="#projects" class="navbar-link">Projects</a>
-        <a href="#contact" class="navbar-link">Contact</a>
-    </nav>
+    <div id="nav-placeholder"></div>
+
+<script>
+  fetch("nav.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script>
+
     <div class="main-content-area">
         <div class="profile-image-container">
             <img src="assets/images/GriggTempPic.png" alt="Stacey Griggs Profile Picture" class="profile-image">
