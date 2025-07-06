@@ -23,217 +23,60 @@
         <h1>Projects</h1>
       </header>
       <main>
-          <section>
-            <h2> Software Engineering and Design</h2>
-            <p>Here are some of the things I've built!</p>
-     <p>III.	Enhancement Plan: 
-      A.	Category One: Software Engineering and Design
-      i.	Select an artifact that is aligned with the software engineering and design category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan. 
-      The project that I selected for my Software Engineering and Design enhancement plan is the weight tracker app that I created in CS 360 Mobile Architecture and Programming. The app was designed to let users log their weight over time and view progress. I was able to build the interface and basic navigation, but I ran out of time before I could complete the login and account creation features. This means that app cannot support multiple users or protect user data. 
-      My planned enhancement will be to implement user authentication so each person can create an account, log in, and only see their data. This improvement will demonstrate my understanding of mobile app architecture, modular design, and how to manage user sessions. 
-      By doing this, I will show that I  understand software engineering ideas like breaking the app into clear manageable parts, designing for future growth, and building secure systems. Completing this app will be a great example of real-world software design and development skills.
-      I am submitting the original code from the app with this enhancement plan. It is also available on my GitHub repo CS360 https://github.com/wildbulll/CS360.git.
-      Note: Your artifact may be work from the following courses:
-    
-•	IT 145: Foundation in Application Development  
-•	CS 250: Software Development Lifecycle  
-•	CS 260: Data Structures and Algorithms  
-•	IT 315: Object Oriented Analysis and Design  
-•	CS 320: Software Testing, Automation, and Quality Assurance  
-•	CS 330: Computational Graphics and Visualization  
-•	CS 340: Advanced Programming Concepts  
-•	CS 350: Emerging Systems Architectures and Technologies  
-•	CS 360: Mobile Architecture and Programming  
-•	IT 365: Operating Environments  
-•	IT 380: Cybersecurity and Information Assurance  
-•	CS 405: Secure Coding  
-•	CS 410: Reverse Software engineering  
-•	IT 340: Network and Telecommunication Management  
-•	IT 380: Cybersecurity and Information Assurance  
 
-ii.	Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement. 
+        <section>
+          <h2>Software Engineering and Design</h2>
+          <p>
+            The project I selected for this category is my <strong>Weight Tracker App</strong> from CS 360 Mobile Architecture and Programming.
+            It was built to let users log their weight and view progress over time.
+          </p>
+          <p>
+            The original app lacked login and account creation, so I plan to enhance it by adding user authentication.
+            This means users can create an account, log in, and only see their data.
+          </p>
+          <ul>
+            <li>Design simple and clear account and login screens</li>
+            <li>Use secure password hashing</li>
+            <li>Store user data safely in a database</li>
+            <li>Validate inputs and restrict access to logged-in users</li>
+          </ul>
 
-My plan is to add user authentication to the weight tracker app. This means creating a “Create Account” screen where users can sign up with a username and password, and a “Login” screen for returning users to access their accounts. After logging in, users will go to the main app to log in or view their weight entries.
+          <p><strong>GitHub Repo:</strong> <a href="https://github.com/wildbulll/CS360.git" target="_blank">CS360 - Weight Tracker</a></p>
+        </section>
 
-To make this secure and easy to use, I will:
-•	Design clear and simple screens for creating accounts and logging in, so users know what to do and get helpful feedback.
-•	Build backend logic to handle new user registrations and logins.
-•	Use password hashing so passwords are never saved as plain text, so user passwords are safe even if the data is exposed.
-•	Store user information and weight data in a database that links each user to their own data.
-•	Validate all user inputs and show clear error messages if something is wrong.
-•	Make sure only logged-in users can see the main weight tracking area, sending anyone else back to the login screen.
-This plan makes the app ready for multiple users and focuses on secure design with easy-to-use features and clean modular code. It shows that I can build important parts of a mobile app while keeping user data safe and private.
+        <section>
+          <h2>Algorithms and Data Structures</h2>
+          <p>
+            For this category, I selected my <strong>Grazioso Salvare Dashboard</strong> from CS 340.
+            I plan to enhance it by adding sorting and filtering algorithms to manage rescue dog data.
+          </p>
+          <ul>
+            <li>Sort dogs by age, breed, rescue type</li>
+            <li>Filter by location or availability</li>
+            <li>Use Python structures like lists and dictionaries</li>
+          </ul>
+          <p><strong>GitHub Repo:</strong> <a href="https://github.com/wildbulll/CS340.git" target="_blank">CS340 - Grazioso Salvare</a></p>
+        </section>
 
-Pseudocode:
-If user opens app:
-    Show Login Screen
-    If "Create Account" is clicked:
-        Show Create Account Screen
-        If user enters valid info:
-            Save user data to database
-            Redirect to Login Screen
-    If user enters login credentials:
-        Check against stored credentials in database
-        If match found:
-            Redirect to Dashboard
-        Else:
-            Show "Invalid credentials" message
+        <section>
+          <h2>Databases</h2>
+          <p>
+            Again using the <strong>Grazioso Salvare Dashboard</strong>, this time I will improve database interaction with MongoDB.
+          </p>
+          <ul>
+            <li>Use MongoDB’s <code>.find()</code> and <code>.sort()</code> for efficient queries</li>
+            <li>Add indexes to speed up filtering by breed, age, location</li>
+            <li>Improve data modeling and query security</li>
+          </ul>
+        </section>
 
-For this category of enhancement, consider improving a piece of software, transferring a project into a different language, reverse engineering a piece of software for a different operating system, or expanding a project’s complexity. These are just recommendations. Consider being creative and proposing an alternative enhancement to your instructor.
-
-Think about what additions to include to complete the enhancement criteria in this category. Since one example option is to port to a new language, that is the kind of scale that is expected. This does not mean you need to port to a new language but instead have an equivalent scale of enhancement. Underlying expectations of any enhancement include fixing errors, debugging, and cleaning up comments, but these are not enhancements themselves.   
-
-iii.	Explain how the planned enhancement will demonstrate specific skills and align with course outcomes. 
-
-a.	Identify and describe the specific skills you will demonstrate that align with the course outcome.
-
-By adding account creation and login, I will show that I can:
-Apply secure software design principles like password hashing, secure session management, and input validation, which relates to developing a security mindset = Course Outcome #5.
-Design modular and scalable parts by creating separate authentication components and integrating them with the app, aligns with designing and evaluating computing solutions = Course Outcome #3.
-Implement user-friendly interface and experience by designing clear login and registration screens that also have helpful error messages, falls under supporting professional communication skills = Course Outcome #2.
-
-b.	Select one or more of the course outcomes below that your enhancement will align with.
-
-Secure coding – Course Outcome #5.
-Modular and scalable design – Course Outcome #3.
-User-friendly interface – Course Outcome #2.
-
-Course Outcomes: 
-
-1.	Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science.  
-2.	Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.  
-3.	Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices.  
-4.	Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.
-5.	Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.  
-
-B.	Category Two: Algorithms and Data Structures
-
-i.	Select an artifact that is aligned with the algorithms and data structures category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan. You may choose work from the courses listed under Category One.
-
-The artifact I selected for the Algorithms and Data Structures category is my final project from CS 340 Client/Server Development, the Grazioso Salvare dashboard. This project involved building a web dashboard using Python and MongoDB to help a fictional dog rescue company view and manage rescue dog data.
-Originally, I was not able to get all of the sorting functions finalized due to running out of time. I will apply sorting and filtering algorithms to show dogs by age, sex, breed, rescue training type, or shelter location and have that location appear on a map. I will use Python data structures like lists, dictionaries, loops, conditionals, and comparison logic, to sort and manage the data. This project will fit into the algorithm category because it demonstrates real-world use of algorithms and data handling to solve a problem.
-I am submitting the original code from the app with this enhancement plan. It is also available on my GitHub repo CS340 https://github.com/wildbulll/CS340.git
-
-
-ii.	Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.
-
-For this enhancement, I plan to improve the Grazioso Salvare dashboard by adding sorting and filtering features to make the dog data more useful and easier to work with. My goal is to make it possible for users to:
-•	Sort dogs by age, sex, breed, or rescue training type
-•	Filter dogs by location, availability, or rescue training type
-•	Combine sorting and filtering in the same request (for example: all dogs in Texas, sorted by age)
-•	
-To do this, I will refactor the Python backend to accept query parameters like sort_by=age&filter_location=TX. Then, I will write the logic to handle these requests by using Python data structures like lists and dictionaries then use conditional filtering using loops and if-statements.
-This plan fits the Algorithms and Data Structures category because it involves writing and applying sorting and filtering algorithms to solve a real problem
-
-Pseudocode
-FUNCTION get_filtered_sorted_dogs(sort_by, filter_location, filter_rescue_type):
-    all_dogs = fetch_dogs_from_database()
-    filtered_dogs = []
-    FOR dog IN all_dogs:
-        IF (filter_location IS NULL OR dog.location == filter_location) AND
-           (filter_rescue_type IS NULL OR dog.rescue_type == filter_rescue_type):
-            ADD dog TO filtered_dogs
-    IF sort_by == "age":
-        SORT filtered_dogs BY dog.age
-    ELSE IF sort_by == "breed":
-        SORT filtered_dogs BY dog.breed
-    ELSE IF sort_by == "rescue_type":
-        SORT filtered_dogs BY dog.rescue_type
-    RETURN filtered_dogs
-
-
-For this category of enhancement, consider improving the efficiency of a project or expanding the complexity of the use of data structures and algorithms for your artifact. These are just recommendations. Consider being creative and proposing an alternative enhancement to your instructor. Note: You only need to choose one type of enhancement per category. 
- 
-Think about what additions to include to complete the enhancement criteria in this category. Since one example option is to port to a new language, that is the kind of scale that is expected. Perhaps you might increase the efficiency and time complexity of an algorithm in an application and detail the logic of the increased time complexity. Remember, you do not need to port to a new language but instead have an equivalent scale of enhancement. Underlying expectations of any enhancement include fixing errors, debugging, and cleaning up comments, but these are not enhancements themselves.  
-
-iii.	Explain how the planned enhancement will demonstrate specific skills and align with course outcomes. 
-
-a.	Identify and describe the specific skills you will demonstrate to align with the course outcome.
-This will show how I can use algorithms and data structures to:
-•	Design and apply sorting algorithms to organize dog data by age, breed, or rescue training type.
-•	Use the right data structures like lists and dictionaries to store and work with dog records.
-•	Write filtering logic that uses if statements and loops to narrow down results based on things like location or rescue type.
-•	Refactor the backend code to keep it clean, organized, and easy to update, making sure that sort and filter logic works with the existing app.
-•	These skills match the course outcomes by showing I can design and evaluate computing solutions = Outcome #3. And use proven software development techniques in my code = Outcome #4. 
-
-b.	Select one or more of the course outcomes listed under Category One that your enhancement will align with.
-
-Algorithm design to solve real problems – Course Outcome #3.
-Clean and maintainable code – Course Outcome #4.
-Communicating technical ideas clearly – Course Outcome #2.
-
-C.	Category Three: Databases
-
-i.	Select an artifact that is aligned with the databases category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan. You may choose work from the courses listed under Category One.
-
-For the Databases category, I am again using the Grazioso Salvare dashboard from CS 340 Client/Server Development. While I focused on sorting and filtering logic in Category Two, this enhancement will focus on how the app interacts with the MongoDB database.
-In the original version, I used basic Python CRUD functions to connect to the database and display information about the rescue dogs. Some parts, like filtering by location and sorting by traits, did not work well because the queries were not finished. My enhancement will fix these issues by improving the way data is queried, filtered, and retrieved from the database.
-Specifically, I plan to:
-Refactor the database queries to use MongoDB’s built-in sorting and filtering features.
-Use query optimization techniques to make data retrieval fast.
-Make sure the data model links each dog to its attributes (breed, age, rescue type, etc.).
-This work will show that I understand how to create efficient database design and usage. This aligns with the Databases category because it will focus on how the backend connects to the database, stores, and retrieves data, and making sure that data is optimized in a way that supports scalability and usability.
-I am submitting the original code from the app with this enhancement plan. It is also available on my GitHub repo CS340 https://github.com/wildbulll/CS340.git
-
-
-ii.	Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.
-
-For this enhancement, I will focus on improving how the Grazioso Salvare app talks to the database, not just how it handles data in the app. Here is what I plan to do:
-Refactor the backend code so it builds better database queries. This means the app will send filters like location or rescue training type, and sorting choices like age or breed to MongoDB and let the database handle it.
-Use MongoDB’s .find() and .sort() functions to filter and sort records based on what the user selects in the dashboard.
-Add indexes to fields like age, breed, and location to make these queries faster.
-These changes will make the app faster because it will not work on loading all of the dog data, but it will sort it so the user will only see what they asked for.
-
-Pseudocode: 
-FUNCTION FetchDogsFromDatabase(queryFilters, sortCriteria):
-    Connect to MongoDB
-    Select the "dogs" collection
-
-    Create a filter object:
-        If there's a location filter, add to query
-        If there's a rescueType filter, add to query
-        (Add others as needed)
-
-    Create a sort object:
-        If sorting by age, add age: 1 (for ascending)
-        If sorting by breed, add breed: 1, etc.
-
-    Run the MongoDB query:
-        If sort is requested, use .find(query).sort(sort)
-        Else, just use .find(query)
-
-    Return the list of dogs from the query
-END FUNCTION
-
-For this category of enhancement, consider adding more advanced concepts of MySQL, incorporating data mining, creating a MongoDB interface with HTML/JavaScript, or building a full stack with a different programming language for your artifact. These are just recommendations; consider being creative and proposing an alternative enhancement to your instructor. Note: You only need to choose one type of enhancement per category.
-
-Think about what additions to include to complete the enhancement criteria in this category. Since one example option is to port to a new language, that is the kind of scale that is expected. Perhaps you might increase the efficiency and time complexity of an algorithm in an application and detail the logic of the increased time complexity. Remember, you do not need to port to a new language but instead have an equivalent scale of enhancement. Underlying expectations of any enhancement include fixing errors, debugging, and cleaning up comments, but these are not enhancements themselves.
-
-iii.	Explain how the planned enhancement will demonstrate specific skills and align with course outcomes. 
-
-a.	Identify and describe the specific skills you will demonstrate that align with the course outcome.
-
-This will show that I can work with a MongoDB database and that I can:
-•	Write better database queries by using .find() and .sort() to filter and sort the dog data.
-•	Use indexes on fields like age, breed, and location to improve speed when searching or sorting large amounts of data.
-•	Keep the data accurate and organized, making sure the right dogs show up based on the user’s choices.
-•	Think about database security by preventing risky inputs and using safe query patterns to protect the system.
-These skills connect to the course outcomes of building efficient solutions, using proper tools and techniques, and creating secure systems. They are important for working on real-world applications that require secure database design and performance.
-
-b.	Select one or more of the course outcomes listed under Category One that your enhancement will align with.
-
-Algorithmic logic to solve real problems efficiently – Course Outcome #3
-Practical coding techniques and clean implementation – Course Outcome #4
-Clear communication to technical and non-technical audiences – Course Outcome #5
-            </p>  
-          </section>
-       </main>
+      </main>
     </div>
   </div>
-  
-<footer>
-    <p2>Created by Stacey Griggs: 07/05/2025 &copy; All rights reserved.</p2>
-</footer>
+
+  <footer>
+    <p>Created by Stacey Griggs: 07/05/2025 &copy; All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
