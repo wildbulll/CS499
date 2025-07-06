@@ -152,3 +152,15 @@ footer {
 p2 {
     color: #2B435A;
 }
+
+.main-content-area ul {
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    color: #8A8E75;
+    line-height: 1.6;
+}
+
+.main-content-area li {
+    margin-bottom: 0.5rem;
+}
+
