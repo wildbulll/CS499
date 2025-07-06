@@ -24,7 +24,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* New: Style the <ul> */
+/* Style the <ul> */
 .navbar-list {
     list-style: none;
     display: flex;
@@ -168,3 +168,9 @@ footer p {
 .left-align {
     text-align: left;
 }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
