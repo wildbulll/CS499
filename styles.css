@@ -46,7 +46,7 @@ body {
 }
 
 .navbar-link:hover {
-    background: transparent;
+    background: white;
     color: darkblue;
 }
 
