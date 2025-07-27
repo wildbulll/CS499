@@ -47,7 +47,8 @@ body {
 }
 
 .navbar-link:hover {
-    background: #555;
+    background: transparent;
+    color: darkblue;
 }
 
 /* Main Content Area Wrapper for Image and Text */
