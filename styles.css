@@ -48,6 +48,7 @@ body {
 .navbar-link:hover {
     background: #f0f0f0;
     color: #2B435A;
+    font-weight: 600;
 }
 
 /* Main Content Area Wrapper for Image and Text */
