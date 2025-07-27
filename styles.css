@@ -8,7 +8,7 @@ body, h1, p, a, ol, li {
 /* Body Styling */
 body {
     font-family: 'Inter', system-ui, sans-serif;
-    background: #F9F8F2 url("https://images.unsplash.com/photo-1751220170218-e57d53bd4aa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTE1NjQ0MjR8&ixlib=rb-4.1.0&q=80&w=1800") no-repeat center center fixed;
+    background: #F9F8F2 
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -64,18 +64,6 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     padding: 2rem;
     gap: 2rem;
-}
-
-nav {
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(6px);
-  color: #333;
-}
-nav a {
-  color: #333;
-}
-nav a:hover {
-  color: #0077cc;
 }
 
 @media (min-width: 700px) {
