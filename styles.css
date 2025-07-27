@@ -193,13 +193,5 @@ ul {
     height: 100%;
 }
 
-a.other {
-    color: darkblue;
-    text-decoration: none;
-    padding: 0.3rem o.6rem;
-}
-a.other:hover {
-    text-deocration: underline;\
-    color: orange;
-}
+
 
