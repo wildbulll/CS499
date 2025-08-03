@@ -213,3 +213,9 @@ ul {
 .main-content-area li {
     margin-bottom: 0.5rem;
 }
+
+.my-8 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
