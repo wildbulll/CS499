@@ -51,7 +51,15 @@ body {
     font-weight: 600;
 }
 
-/* Main Content Area Wrapper for Image and Text */
+/* Flex container for image and title */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Main Content Area */
 .main-content-area {
     flex: 1;
     max-width: 1000px;
@@ -72,17 +80,21 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* Image Styling */
 .profile-image-container {
     flex-shrink: 0;
-    margin-right: 3.5rem;
 }
 .profile-image {
     width: 180px;
     height: 180px;
-    border-radius: 50%; /*Round*/
+    border-radius: 50%;
     object-fit: cover;
     border: 4px solid #305078;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -91,7 +103,7 @@ body {
 /* Portfolio Text Content Styling */
 .portfolio-text-content {
     flex: 1;
-    text-align: center;
+    text-align: left;
     min-width: 0;
     display: flex;
     flex-direction: column;
@@ -154,7 +166,29 @@ footer {
 }
 footer p {
     color: #2B435A;
-    margin 0;
+    margin: 0;
+}
+
+/* Video Styling */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 .main-content-area ul {
@@ -167,31 +201,3 @@ footer p {
 .main-content-area li {
     margin-bottom: 0.5rem;
 }
-
-.left-align {
-    text-align: left;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
