@@ -64,15 +64,15 @@ body {
     flex: 1;
     max-width: 1000px;
     width: 100%;
-    margin: 2rem auto 0 auto;
+    margin: rem auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-    padding: 2rem;
-    gap: 2rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 @media (max-width: 700px) {
