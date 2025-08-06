@@ -9,24 +9,22 @@
 <body>
     <div id="nav-placeholder"></div>
 
-<script>
-  fetch("nav.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("nav-placeholder").innerHTML = data;
-    });
-</script>
+    <script>
+      fetch("nav.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <header class="center-header">
+        <h1>Welcome to My Portfolio</h1>
+    </header>
 
     <div class="main-content-area">
         <div class="profile-image-container">
                 <img src="assets/images/GriggTempPic.png" alt="Stacey Griggs Profile Picture" class="profile-image">
-        </div>
-        
-        <div class="portfolio-text-content">
-            <header class="center-header">
-                <h1>Welcome to My Portfolio</h1>
-            </header>
-        </div>
+        </div>       
     
         <main class="container px-4">
             <h2>Code Review</h2>
