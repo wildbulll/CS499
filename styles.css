@@ -51,12 +51,21 @@ body {
     font-weight: 600;
 }
 
-/* Flex container for image and title */
-.profile-header {
+/* Flex container for title */
+.profile-header-inline {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-    flex-wrap: wrap;
+    margin: 2.5rem auto 1rem auto; 
+    test-align: center;
+}
+
+.inline-header h1 {
+    margin: 0;
+    color: #2B435A;
+    font-size: 2rem;
+    white-space: nowrap; 
 }
 
 /* Main Content Area */
@@ -81,10 +90,6 @@ body {
         align-items: center;
     }
 
-    .profile-header {
-        flex-direction: column;
-        text-align: center;
-    }
     .navbar {
         flex-direction: column;
         align-items: center;
