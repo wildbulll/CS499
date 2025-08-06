@@ -1,109 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Milestone Two Enhancement</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
-      background: #fff;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-      border-radius: 8px;
-    }
-
-    h1, h2 {
-      color: #222;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.25rem;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      margin-left: 1.5rem;
-    }
-
-    li {
-      margin-bottom: 0.75rem;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-      color: #777;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-  <div class="container">
-    <h1>Milestone Two: Software Design/Engineering Artifact Enhancement</h1>
-    <p><strong>Stacey Griggs</strong><br>Southern New Hampshire University<br>Professor Martinez, MSIT<br>CS 499<br>7/20/2025</p>
 
-    <h2>Description of the Artifact:</h2>
-    <p>This artifact is an interactive dashboard web application created using Dash and Python. It was initially developed in March of 2025 as part of the CS-340 course to display and analyze animal rescue data through tables, charts, and maps. The original version had basic layout and filtering options.</p>
+  <div id="nav-placeholder"></div>
 
-    <h2>Justification for Inclusion in ePortfolio:</h2>
-    <p>This dashboard shows that I can build a complete data visualization tool from start to finish while managing both the design and functionality of a full-stack application. I created an interactive layout that includes a data table, pie chart, and map, with each component connected to live data and organized using a responsive Flexbox structure so they adjust when the screen is resized. The dashboard pulls live data and updates the charts and map automatically, which shows I can connect data to visual displays. I also customized the colors, layout, and spacing to make the app easy to use and visually appealing.</p>
-    <p>There are still a few options that need improvement, which I plan to address in the next milestone when I work on the database.</p>
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
 
-    <h2>Outcomes Achieved in This Milestone:</h2>
-    <ul>
-      <li><strong>Better Layout with Flexbox:</strong> Previously, the dashboard stacked everything vertically with no clear order. I used Flexbox to create side-by-side columns, making it easier to view and use.</li>
-      <li><strong>Improved Visual Design:</strong> I added a round logo, bold title, and consistent visual style with colors, spacing, and shadows.</li>
-      <li><strong>Organized and Clear Code:</strong> I grouped related elements and added comments to make the code easier to understand and maintain.</li>
-      <li><strong>More User-Friendly Data Table:</strong> I added scroll functionality and kept sorting/filtering features to improve data exploration.</li>
-      <li><strong>Consistent Styling:</strong> I applied matching styles to dropdowns, buttons, and headings and set fixed sizes for charts and maps.</li>
-      <li><strong>Smarter Data Options:</strong> I simplified dropdown choices in the pie chart to reduce clutter and improve usability.</li>
-    </ul>
+  <header>
+    <h1>Enhancement Three Databases</h1>
+  </header>
 
-    <h2>Outcomes and Updates:</h2>
-    <p>These changes helped me meet the goals I set earlier in the course. I focused on creating clean designs and writing maintainable code. I now understand more about responsive web design and how user experience can be improved through visual layout and interaction design. I will continue learning more about accessibility and performance to make my future projects even better.</p>
 
-    <h2>Reflection on the Enhancement Process:</h2>
-    <p>I improved this project by adjusting layouts to fit different screen sizes, making the app more usable and visually clear. Balancing function with design taught me to prioritize the user experience. I faced challenges arranging components clearly and debugging layout spacing, but small iterative changes helped me resolve issues. I also made the pie chart dropdown smarter by limiting its options to only relevant columns using debugging and code inspection.</p>
+  <footer>
+    <p>Created by Stacey Griggs: 07/05/2025 &copy; All rights reserved.</p>
+  </footer>
 
-    <h2>Code Comparison:</h2>
-    <p><strong>Original code:</strong> <code>OriginalDashboardCS340</code><br>
-    <strong>Updated code:</strong> <code>ProjectTwoDashboard</code></p>
-
-    <h2>Bonus Debug Example:</h2>
-    <p><strong>Problem:</strong> Pie chart dropdown was displaying all columns.<br>
-    <strong>Debug Output:</strong><br>
-    <code>print(df.columns)</code><br>
-    <code>print(df.head())</code><br>
-    <strong>Fix:</strong> Limited dropdown options to only the desired columns.</p>
-
-    <div class="footer">
-      &copy; 2025 Stacey Griggs – CS 499 | Milestone Two
-    </div>
-  </div>
 </body>
 </html>
