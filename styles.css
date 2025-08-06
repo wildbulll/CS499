@@ -232,3 +232,8 @@ ul {
     margin-bottom: 0.5rem;
 }
 
+.center-header {
+    width: 100%;
+    text-align: center;
+}
+
