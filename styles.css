@@ -219,3 +219,16 @@ ul {
     justify-content: center;
     margin-top: 2rem;
 }
+
+.centered-list {
+    display: flex;
+    flex-direction: column; /* stacked vertically */
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    list-style-position: inside; /* optional: keeps numbers inside */
+}
+.centered-list li {
+    margin-bottom: 0.5rem;
+}
+
