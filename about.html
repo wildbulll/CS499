@@ -3,40 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stacey Griggs</title>
+    <title>Professional Self-Assesment | Stacey Griggs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="nav-placeholder"></div>
 
-<script>
-  fetch("nav.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("nav-placeholder").innerHTML = data;
-    });
-</script>
+    <script>
+      fetch("nav.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
 
+    <header>
+        <h1>Professional Self-Assessment</h1>
+        <p>Stacey Griggs | CS 499: Computer Science Capstone | August 2025</p>
+        <p>Portfolio: <a href="https://wildbulll.github.io/CS499/">https://wildbulll.github.io/CS499/</a></p>
+    </header>
+    
   <div class="main-content-area">
     <div class="portfolio-text-content">
-      <header>
-        <h1 style="text-align: center;">About Me</h1>
-      </header>
 
       <section>
-        <h2>Welcome!</h2>
-        <p>
-          I’m Stacey Griggs, a soon-to-be graduate with a Bachelor’s in Computer Science from SNHU. 
+        <p>I’m Stacey Griggs, a soon-to-be graduate with a Bachelor’s in Computer Science from SNHU. 
           I started this journey in 2019 with the goal of earning an associate degree in IT—but I didn’t stop there. 
           With support from my employer and family, I built the confidence to pursue my dream of becoming a full-stack developer.
         </p>
       </section>
 
       <section>
-        <h2>Professional Self-Assessment</h2>
-        <h3>Growth Through the Program</h3>
-        <p>
-          Before SNHU, I struggled academically due to a lack of confidence and support. This program changed everything. 
+        <h2>Growth Through the Program</h2>
+        <p>Before SNHU, I struggled academically due to a lack of confidence and support. This program changed everything. 
           I learned to seek help, tackle complex problems, and develop technical fluency. From matrix math to debugging logic errors, 
           I grew in areas I never imagined possible.
         </p>
@@ -76,7 +75,6 @@
       <section>
         <h2>Projects</h2>
         <ul>
-          <li><strong>GriggsProject3.zip</strong>: Weight Tracker App (CS 360)</li>
           <li><strong>GriggsProjectTwo</strong>: Grazioso Salvare Dashboard (CS 340)</li>
         </ul>
       </section>
