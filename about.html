@@ -2,64 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Stacey Griggs</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Professional Self-Assessment</h1>
-    <p>Stacey Griggs | CS 499: Computer Science Capstone | August 2025</p>
-    <p>Portfolio: <a href="https://wildbulll.github.io/CS499/">https://wildbulll.github.io/CS499/</a></p>
-  </header>
 
-  <main class="container">
-    <section class="section">
-      <h2>Program Outcome 1</h2>
-      <p>
-        Throughout the program, I’ve worked on projects that involved creating software to meet real user needs...
-        <br />
-        <strong>View project:</strong> <a href="LINK_TO_ANIMAL_DASHBOARD">Animal Rescue Dashboard</a>
-      </p>
-    </section>
+  <div id="nav-placeholder"></div>
 
-    <section class="section">
-      <h2>Program Outcome 2</h2>
-      <p>
-        In CS 260: Data Structures and Algorithms, I implemented and analyzed sorting algorithms...
-        <br />
-        <strong>View narrative:</strong> <a href="LINK_TO_DATA_STRUCTURES_NARRATIVE">Data Structures Narrative</a>
-      </p>
-    </section>
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
 
-    <section class="section">
-      <h2>Program Outcome 3</h2>
-      <p>
-        My ability to explain technical decisions has improved through the program...
-        <br />
-        <strong>Portfolio home:</strong> <a href="https://wildbulll.github.io/CS499/">GitHub Pages Portfolio</a>
-      </p>
-    </section>
+  <div class="main-content-area">
+    <div class="portfolio-text-content">
+      <header>
+        <h1 style="text-align: center;">About Me</h1>
+      </header>
 
-    <section class="section">
-      <h2>Program Outcome 4</h2>
-      <p>
-        In CS 305: Software Security, I learned secure coding practices like access control...
-        <br />
-        <strong>View security narrative:</strong> <a href="LINK_TO_SECURITY_NARRATIVE">Security Narrative</a>
-      </p>
-    </section>
+      <section>
+        <h2>Welcome!</h2>
+        <p>
+          I’m Stacey Griggs, a soon-to-be graduate with a Bachelor’s in Computer Science from SNHU. 
+          I started this journey in 2019 with the goal of earning an associate degree in IT—but I didn’t stop there. 
+          With support from my employer and family, I built the confidence to pursue my dream of becoming a full-stack developer.
+        </p>
+      </section>
 
-    <section class="section">
-      <h2>Final Thoughts</h2>
-      <p>
-        Completing the BS in Computer Science program has given me a strong foundation in software development...
-      </p>
-    </section>
-  </main>
+      <section>
+        <h2>Professional Self-Assessment</h2>
+        <h3>Growth Through the Program</h3>
+        <p>
+          Before SNHU, I struggled academically due to a lack of confidence and support. This program changed everything. 
+          I learned to seek help, tackle complex problems, and develop technical fluency. From matrix math to debugging logic errors, 
+          I grew in areas I never imagined possible.
+        </p>
+
+        <h3>Key Skills and Strengths</h3>
+        <ul>
+          <li><strong>Clean, well-documented code</strong> using modular design and secure practices</li>
+          <li><strong>Strong debugging skills</strong> and the ability to communicate technical challenges</li>
+          <li><strong>Comfort with full-stack development:</strong> backend logic, databases, APIs, and front-end UI</li>
+          <li><strong>Version control and collaboration:</strong> GitHub, Git, and Agile methodology</li>
+        </ul>
+
+        <h3>Career Goals</h3>
+        <p>
+          I aim to become a full-stack developer who builds clean, scalable, and secure applications. I’m currently learning AWS for cloud deployment, 
+          and I plan to grow into roles that involve cloud engineering and DevOps over time.
+        </p>
+      </section>
+
+      <section>
+        <h2>CS 499 Artifacts and Enhancements</h2>
+        <ul>
+          <li><strong><a href="artifact-enhancement.html">Animal Shelter Dashboard:</a></strong> A full-stack app with data filtering and favoriting.</li>
+          <li><strong><a href="data-structures-narrative.html">Data Structures Narrative:</a></strong> Discusses sorting, trees, and algorithm optimization.</li>
+          <li><strong><a href="software-security-narrative.html">Security Narrative:</a></strong> Shows how I applied secure coding practices to avoid vulnerabilities.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What Sets Me Apart</h2>
+        <p>
+          I am driven, resilient, and passionate about tech. I thrive in team environments where communication, trust, 
+          and continuous learning are key. My portfolio reflects my ability to not only write code—but to write it with purpose.
+        </p>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>GriggsProject3.zip</strong>: Weight Tracker App (CS 360)</li>
+          <li><strong>GriggsProjectTwo</strong>: Grazioso Salvare Dashboard (CS 340)</li>
+        </ul>
+      </section>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Stacey Griggs</p>
+    <p>Created by Stacey Griggs — 07/05/2025 &copy; All rights reserved.</p>
   </footer>
+
 </body>
 </html>
