@@ -49,6 +49,7 @@ body {
     background: #f0f0f0;
     color: #2B435A;
     font-weight: 600;
+    text-decoration: none;
 }
 
 /* Flex container for title */
