@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me - Stacey Griggs</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacey Griggs</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="nav-placeholder"></div>
 
-  <div id="nav-placeholder"></div>
-
-  <script>
-    fetch("nav.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+<script>
+  fetch("nav.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script>
 
   <div class="main-content-area">
     <div class="portfolio-text-content">
