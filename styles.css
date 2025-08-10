@@ -233,11 +233,9 @@ ul {
 
 .my-8 {
     display: flex;
-    justify-content: ;
+    justify-content: center;
     margin-top: 2rem;
 }
-
-
 
 .center-header {
     margin-top: 30px;
