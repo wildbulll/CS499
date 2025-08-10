@@ -26,17 +26,15 @@ body {
 }
 
 /* Style the navbar */
-.navbar-list {
+.navbar-list,
+.navbar-list li {
     list-style: none;
     display: flex;
-    gap: 2.5rem;
+    gap: 2.0rem;
     margin: 0;
     padding: 0;
 }
 
-.navbar-list li {
-    list-style: none;
-}
 .navbar-link {
     color: #fff;
     text-decoration: none;
@@ -239,17 +237,7 @@ ul {
     margin-top: 2rem;
 }
 
-.ed-list {
-    display: flex;
-    flex-direction: column; 
-    align-items: ;
-    justify-content: ;
-    padding-left: 0;
-    list-style-position: inside; 
-}
-.ed-list li {
-    margin-bottom: 0.5rem;
-}
+
 
 .center-header {
     margin-top: 30px;
