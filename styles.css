@@ -117,6 +117,9 @@ body {
 }
 
 /* Image Styling */
+.profile-image-container {
+    flex-shrink: 0;
+}
 .profile-image {
     width: 200px;
     height: 200px;
