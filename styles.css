@@ -62,6 +62,22 @@ body {
     width: 90%;
 }
 
+/* Name Styling */
+.name-container {
+    flex-shrink: 0;
+    display: flex;
+    align-items: ceter;
+    
+.profile-name {
+    font-size: 3rem;
+    color: #2B435A;
+    font-weight: 700;
+    font-family: 'Inter', system-ui, sans-serif;
+    letter-spacing: 0.05em;
+    border-left: 4px solid #305078;  /* vertical colored bar to left for style */
+    padding-left: 1rem;
+}
+
 /* Image Styling */
 .profile-image-container {
     flex-shrink: 0;
@@ -74,6 +90,9 @@ body {
     border: 4px solid #305078;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+    
 
 /* Text styling inside inline-header */
 .inline-header h1 {
