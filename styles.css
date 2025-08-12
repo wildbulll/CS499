@@ -51,7 +51,7 @@ body {
 }
 
 /* Flex container for title */
-.profile-header-inline {
+.-header-inline {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -105,14 +105,14 @@ body {
 }
 
 @media (max-width: 700px) {
-    .profile-header-inline {
+    .-header-inline {
         flex-direction: column;
     }
 
     .profile-image-container {
         display: flex;
         justify-content: left;
-        width: 100%;
+        width: 99%;
     }
 }
 
