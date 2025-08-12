@@ -1,5 +1,5 @@
 /* Reset some browser defaults */
-body, h1, p, a, li {
+body, h1, h2, p, a, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -140,10 +140,12 @@ body {
 }
 
 /* Header Styling */
-h1 {
+h1, h2 {
     color: #2B435A;
     margin-bottom: 0.25rem;
 }
+
+
 
 /* Paragraph and List Styling */
 p, ol {
