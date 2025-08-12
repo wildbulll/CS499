@@ -67,6 +67,7 @@ body {
     flex-shrink: 0;
     display: flex;
     align-items: ceter;
+}
     
 .profile-name {
     font-size: 3rem;
