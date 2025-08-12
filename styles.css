@@ -51,7 +51,7 @@ body {
 }
 
 /* Flex container for title */
-.-header-inline {
+.profile-header-inline {
     display: flex;
     align-items: center;
     justify-content: flex-start;
