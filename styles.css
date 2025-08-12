@@ -110,9 +110,13 @@ body {
     }
 
     .profile-image-container {
-        display: flex;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #305078;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         justify-content: left;
-        width: 99%;
     }
 }
 
@@ -121,13 +125,10 @@ body {
     flex-shrink: 0;
 }
 .profile-image {
-    width: 2000px;
-    height: 200px;
-    border-radius: 50%;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     display: block;
-    border: 4px solid #305078;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Portfolio Text Content Styling */
