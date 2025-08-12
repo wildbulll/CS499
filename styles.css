@@ -108,10 +108,8 @@ body {
     .-header-inline {
         flex-direction: column;
     }
-}
 
-/* Image Styling */
-.profile-image-container {
+    .profile-image-container {
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -122,6 +120,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+}
+
+/* Image Styling */
+
 .profile-image {
     width: 200px;
     height: 200px;
