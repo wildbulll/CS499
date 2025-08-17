@@ -51,43 +51,66 @@ body {
 }
 
 /* Header container image + text */
-.profile-header-inline h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
+.profile-image-and-name {
+    display: flex;                 
+    align-items: center;          
+    justify-content: center;      
+    gap: 2rem;                     
+    margin-top: 4rem;             
+    flex-wrap: wrap;               
+}
+
+.profile-image-and-name h1 {
+    font-size: 3rem;               
     font-weight: 700;
-    gap: 1.5rem;
-    margin: 2.5rem auto 1rem auto;
-    flex-wrap: wrap;
-    max-width:700px;
-    width: 90%;
+    color: #2B435A;
     text-align: center;
+}
+.profile-header-inline h1 {
+    font-size: 3rem;        
+    font-weight: 700;
+    color: #2B435A;
+    text-align: center;     
+    margin: 2rem auto 1rem auto;
+}
+
+.profile-header-inline {
+    display: flex;
+    align-items: center;          
+    justify-content: center;      
+    gap: 3rem;                    
+    margin-top: 4rem;             
+    flex-wrap: wrap;              
 }
 
 /* Image Styling */
 .profile-image-container {
-    flex-shrink: 0;
-}
-.profile-image {
-    width: 200px;
-    height: 200px;
+    width: 260px;               
+    height: 260px;
     border-radius: 50%;
-    object-fit: cover;
+    overflow: hidden;
     border: 4px solid #305078;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.profile-image-container img.profile-image {
+    width: 100%;        
+    height: 100%;       
+    object-fit: cover;
 }
 
 /* Text styling inside inline-header */
 .inline-header h2 {
-    max-width: 900px;
-    margin: 0 auto;
-    color: #2B435A;
-    text-align: center;
-    white-space: normal;
-    padding: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;       
     font-weight: 600;
+    color: #2B435A;
+    text-align: center;    
+    margin: 0 auto 2rem auto;
+    max-width: 900px;
+    padding: 0.5rem;
 }
 
 /* Main Content Area */
@@ -252,7 +275,8 @@ ol {
     
     .profile-image-container {
         display: flex;
-        justify-content: left;
+        justify-content: center; 
         width: 100%;
+        margin-bottom: 1rem;     
     }
 }
