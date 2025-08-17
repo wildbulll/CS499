@@ -259,10 +259,6 @@ ol {
     padding-left: 20px;
 }
 
-figcaption {
-  color: darkblue;
-}
-
 @media (max-width: 700px) {
     .navbar {
         flex-direction: column;
