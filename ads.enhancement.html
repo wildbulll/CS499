@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Data Structures and Algorithms Enhancement</title>
+  <title>Algorithms and Data Structures Enhancement</title>
   <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
@@ -51,9 +51,12 @@
         update_dashboard
       </p>
       <p>
-        Change the callback from this:<br>         
+        Change the callback from this:<br>
+          <img src="assets/images/callback1.png" alt="callback screenshot><br>
         To this for filtering options sort-by dropdown:<br>
-        Added new parameters to update_dashboard<br>        
+          <img src="assets/images/callback2.png" alt="callback screenshot><br>
+        Added new parameters to update_dashboard<br>
+          <img src="assets/images/callback3.png" alt="callback screenshot><br>
         Geographic Distance Calculation with the Haversine Formula: I built a “Distance from Austin (mi)” feature
         that calculates how far each selected animal is from Austin using the Haversine formula. This adds real-world
         value by combining math with location data to make the dashboard more informative and interactive. 
@@ -61,8 +64,11 @@
         me calculate distances based on the user’s active selection. This shows my skill in applying a geometric 
         algorithm while handling numerical data like location_lat and location_long, providing users with real-time,
         meaningful information based on their selection.<br>
-        Create a callback to calculate distance from Austin:<br>         
-        Pie Chart Selection: I also refined the pie chart options to include only the most relevant columns, 
+        Create a callback to calculate distance from Austin:<br>  
+            <img src="assets/images/callback4.png" alt="callback screenshot><br>
+        Pie Chart Selection: <br>
+          <img src="assets/images/piechart1.png" alt="piechart screenshot><br>
+        I also refined the pie chart options to include only the most relevant columns, 
         instead of allowing users to choose from every column in the dataset. I did this because some columns, 
         like latitude and longitude, do not make sense to visualize in a pie chart. By limiting the options to 
         meaningful categories like animal type, breed, or outcome_type, I made the chart easier to understand 
@@ -92,12 +98,30 @@
         I also learned how to use the Haversine formula. I needed to find a function to calculate distance that worked
         with  Python. Then I needed to run it a couple of times to debug it to make sure it worked with all selections.
         This helped me see why it is important to understand the math behind an algorithm to make sure it works right.        
-        
-        Original Dashboard:<br>
-        Software Design/Engineering Update:<br>   
-        Algorithms/Data Structure Update:</br>
     </p>
     </section>
+    <section>
+      <h2>Code Comparison</h2>
+    
+      <figure>
+        <h3>Original Design</h3>
+        <img src="assets/images/originalDashboard.png" alt="Original Grasioso Salvare Dashboard">
+        <figcaption>Original dashboard layout and features</figcaption>
+      </figure>
+    
+      <figure>
+        <h3>Software Design / Engineering Enhancement</h3>
+        <img src="assets/images/sdeDashboard.png" alt="Software Design / Engineering Screenshot">
+        <figcaption>Improved layout with Flexbox, consistent styling, and easier usability</figcaption>
+      </figure>
+    
+      <figure>
+        <h3>Algorithm and Data Structure Enhancement</h3>
+        <img src="assets/images/adsDashboard.png" alt="Algorithms and Data Structures Enhancement Screenshot">
+        <figcaption>Added sorting, filtering, and distance calculations to make data easier to explore</figcaption>
+      </figure>
+    </section>
+
     <section>
       <p>
         <strong>GitHub Repo: </strong> <a href="https://github.com/wildbulll/CS340.git" target="_blank">CS340 - Grazioso Salvare Dashboard</a><br>
