@@ -84,6 +84,25 @@
     display: inline-block;
 }
 
+.carousel-button {
+  background: radial-gradient(circle at 30% 30%, #ffb6c1, #ff69b4, #db7093);
+  border: 3px solid #fffacd;
+  border-radius: 50% / 60%; /* gives the egg shape */
+  padding: 20px 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-button:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 700px) {
     .carousel-slide img.carousel-image {
