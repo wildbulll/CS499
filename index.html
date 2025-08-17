@@ -17,29 +17,25 @@
         });
     </script>
 
-    <!-- Bokeh Background Section -->
-    <div id="app">
-        <canvas id="webgl-canvas"></canvas>
-        <header class="profile-header-inline">
-          <div>
+    <header class="profile-header-inline">
+        <div>
             <h1>Stacey Griggs</h1>
-          </div>
-          <div class="profile-image-container">
+        </div>
+        <div class="profile-image-container">
             <img src="assets/images/STGprofilePic.png" alt="Stacey Griggs Profile Picture" class="profile-image">
-          </div>
-        </header>
-    </div>
+        </div>
     
-    <div class="inline-header">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am a Computer Science student at Southern New Hampshire University, set to graduate in Fall 2025. 
-            My coursework introduced me to full-stack development, database management, and cloud 
-            migration, which have become my primary areas of interest. I've also gained valuable experience working 
-            with AI and I'm eager to continue building on this knowledge. This portfolio showcases my academic projects, 
-            with a featured code review that guides you through my process of making improvements to my work. Please feel 
-            free to explore my work and connect with me to discuss new opportunities.
-        </p>
-    </div>
+        <div class="inline-header">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a Computer Science student at Southern New Hampshire University, set to graduate in Fall 2025. 
+                My coursework introduced me to full-stack development, database management, and cloud 
+                migration, which have become my primary areas of interest. I've also gained valuable experience working 
+                with AI and I'm eager to continue building on this knowledge. This portfolio showcases my academic projects, 
+                with a featured code review that guides you through my process of making improvements to my work. Please feel 
+                free to explore my work and connect with me to discuss new opportunities.
+            </p>
+        </div>
+     </header>
 
     <main class="main-content-area">
         
@@ -75,22 +71,5 @@
     <footer>
         <p>Created by Stacey Griggs: 07/05/2025 &copy; All rights reserved.</p>
     </footer>
-
-    <!-- Bokeh Background Script -->
-  <script type="module">
-    import { Bokeh1Background } from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.2/build/backgrounds/bokeh1.cdn.min.js'
-
-    const bokeh1Background = Bokeh1Background(document.getElementById('webgl-canvas'))
-    bokeh1Background.loadMap('https://cdn.jsdelivr.net/npm/threejs-components@0.0.2/build/assets/bokeh-particles2.png')
-    bokeh1Background.setColors([0x6d4862, 0xfd826c, 0x22ccc1])
-
-    document.body.addEventListener('click', () => {
-      bokeh1Background.setColors([
-        0xffffff * Math.random(), 
-        0xffffff * Math.random(), 
-        0xffffff * Math.random()
-      ])
-    })
-  </script>
 </body>
 </html>
