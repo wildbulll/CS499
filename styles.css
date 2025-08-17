@@ -255,7 +255,7 @@ ol {
     }
 }
 
-/* Ensure canvas background sits behind everything */
+/* Canvas background sits behind everything */
 #app {
   position: relative;
   text-align: center;
