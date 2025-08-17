@@ -6,11 +6,10 @@
     <title>Stacey Griggs</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="carousel.css">
-    
 </head>
 <body>
+    <!-- Navbar placeholder -->
     <div id="nav-placeholder"></div>
-
     <script>
         fetch("nav.html")
             .then(response => response.text())
@@ -19,43 +18,38 @@
             });
     </script>
 
+    <!-- Page header -->
     <header class="center-header">
         <h1>Projects</h1>
     </header>
 
+    <!-- Main content -->
     <main class="main-content-area">
+        <!-- Carousel -->
         <div class="carousel" id="projects-carousel">
             <button class="carousel-btn carousel-btn-left" aria-label="Previous Slide">&#10094;</button>
 
             <div class="carousel-track-container">
                 <ul class="carousel-track">
-                    <!-- Slide 1 -->
+                    <!-- Slide 1: Capstone Overview -->
                     <li class="carousel-slide current-slide">
                         <img src="assets/images/originalDashboard.png" alt="Original Grasioso Salvare Dashboard" class="carousel-image">
                         <h3>CS499 Capstone</h3>
+                        <p><strong>Class Goal:</strong> Demonstrate the ability to make meaningful improvements in Software Design & Engineering, Data Structures & Algorithms, and Databases by enhancing an existing project.</p>
+                        <p><strong>Project Selected:</strong> The <strong>Grasioso Salvare Dashboard</strong> is a Python Dash application originally designed to help find rescue dogs. Users could view, sort, and filter data on available dogs, with interactive charts for insights.</p>
                         <p>
-                            <strong>Class Goal:</strong>Demonstrate the ability to make meaningful improvements in 
-                            Software Design & Engineering, Data Structures & Algorithms, and 
-                            Databases by enhancing an existing project.
-                        </p>
-                        <p>
-                            <strong>Project Selected:</strong> The <strong>Grasioso Salvare Dashboard</strong> is a Python Dash 
-                            application originally designed to help find rescue dogs. It allowed users to view, sort, 
-                            and filter data on available dogs, with interactive charts for visual insights.
-                        </p>
-                        <p>
-                            <strong>GitHub Repo: </strong> <a href="https://github.com/wildbulll/CS340.git" target="_blank">CS340 - Grazioso Salvare Dashboard</a><br>
-                            <strong>GitHub Repo: <strong><a href="https://wildbulll.github.io/CS499/" target="_blank" rel="noopener noreferrer">CS499 - Computer Science Capstone</a>
+                            <strong>GitHub Repo:</strong> 
+                            <a href="https://github.com/wildbulll/CS340.git" target="_blank">CS340 - Grasioso Salvare Dashboard</a><br>
+                            <strong>GitHub Repo:</strong> 
+                            <a href="https://wildbulll.github.io/CS499/" target="_blank" rel="noopener noreferrer">CS499 - Computer Science Capstone</a>
                         </p>
                     </li>
 
-                    <!-- Slide 2 -->
+                    <!-- Slide 2: Software Design / Engineering -->
                     <li class="carousel-slide">
-                        <img src="assets/images/originalDashboard.png" alt="Original Grasioso Salvare Dashboard" class="carousel-image">
-                        <h3>Software Design / Engineering </h3>
-                        <p>The project I selected for this category is my <strong>Grasioso Salvare Dashboard</strong> 
-                            from CS 340 Client Server Development.
-                        </p>
+                        <img src="assets/images/originalDashboard.png" alt="Software Design Screenshot" class="carousel-image">
+                        <h3>Software Design / Engineering</h3>
+                        <p>The project I selected is my <strong>Grasioso Salvare Dashboard</strong> from CS 340 Client Server Development.</p>
                         <ol>
                             <li>Responsive two-column layout for better usability</li>
                             <li>Consistent styling for headings, buttons, and dropdowns</li>
@@ -65,31 +59,27 @@
                         <a href="sde.enhancement.html" target="_blank" class="github-link">Learn More</a>
                     </li>
 
-                    <!-- Slide 3 -->
+                    <!-- Slide 3: Data Structures & Algorithms -->
                     <li class="carousel-slide">
-                        <img src="assets/images/orignalDashboard.png" alt="Rescue Dashboard Screenshot" class="carousel-image">
+                        <img src="assets/images/originalDashboard.png" alt="Algorithms & Data Structures Screenshot" class="carousel-image">
                         <h3>Algorithms & Data Structures</h3>
-                        <p>For this category, I enhanced the <strong>Grazioso Salvare Dashboard</strong> by adding sorting, 
-                            filtering, and distance calculation features to make it easier to find and compare rescue dogs.
-                        </p>
+                        <p>Enhanced the dashboard by adding sorting, filtering, and distance calculation features to make it easier to find and compare rescue dogs.</p>
                         <ol>
                             <li>Dynamic sorting by age, breed, or color using Pandas</li>
                             <li>Multi-criteria filtering for more precise searches</li>
                             <li>Distance-from-Austin calculation using the Haversine formula</li>
-                            <li>Refined pie chart to only display meaningful categories</li>
+                            <li>Refined pie chart to display only meaningful categories</li>
                         </ol>
                         <a href="dsa.enhancement.html" target="_blank" class="github-link">Learn More</a>
                     </li>
 
-                    <!-- Slide 4 -->
+                    <!-- Slide 4: Databases -->
                     <li class="carousel-slide">
-                        <img src="assets/images/originalDashboard.png" alt="Algorithms Demo Screenshot" class="carousel-image">
+                        <img src="assets/images/originalDashboard.png" alt="Database Screenshot" class="carousel-image">
                         <h3>Databases</h3>
-                        <p>In this category, I expanded the <strong>Grazioso Salvare Dashboard</strong> by improving 
-                            database interaction with MongoDB and adding a “favorites” feature.
-                        </p>
+                        <p>Expanded the dashboard by improving database interaction with MongoDB and adding a “favorites” feature.</p>
                         <ol>
-                            <li>Implemented a system for saving and filtering favorite animals</li>
+                            <li>Implemented system for saving and filtering favorite animals</li>
                             <li>Used Dash state management to keep favorites consistent when filters change</li>
                             <li>Improved query handling for better performance and accuracy</li>
                             <li>Ensured data is retrieved and displayed securely</li>
@@ -101,15 +91,19 @@
 
             <button class="carousel-btn carousel-btn-right" aria-label="Next Slide">&#10095;</button>
         </div>
+
+        <!-- Contact link BELOW the carousel -->
         <div class="container-center-link">
             <a class="github-link" href="contact.html" target="_blank">Contact me</a>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>Created by Stacey Griggs: 07/05/2025 &copy; All rights reserved.</p>
     </footer>
 
+    <!-- Carousel JS -->
     <script src="carousel.js" defer></script>
 </body>
 </html>
