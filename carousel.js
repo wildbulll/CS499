@@ -1,5 +1,4 @@
-<script>
-  // Carousel functionality
+document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(track.children);
   const nextBtn = document.querySelector('.carousel-btn-right');
@@ -31,4 +30,4 @@
     if (endX < startX - 50) nextBtn.click();
     if (endX > startX + 50) prevBtn.click();
   });
-</script>
+});
