@@ -255,3 +255,20 @@ ol {
     }
 }
 
+/* Ensure canvas background sits behind everything */
+#app {
+  position: relative;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#app canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* keeps it in the background */
+}
+
+
