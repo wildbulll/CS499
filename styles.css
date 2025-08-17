@@ -52,11 +52,11 @@ body {
 
 /* Header container image + text */
 .profile-image-and-name {
-    display: flex;                 
+    display: flex;
+    flex-direction: row;
     align-items: center;          
     justify-content: center;      
-    gap: 2rem;                     
-    margin-top: 4rem;             
+    gap: 2rem;                                  
     flex-wrap: wrap;               
 }
 
@@ -76,11 +76,12 @@ body {
 
 .profile-header-inline {
     display: flex;
-    align-items: center;          
-    justify-content: center;      
-    gap: 3rem;                    
+    flex-direction: column;
+    align-items: center;                        
     margin-top: 4rem;             
-    flex-wrap: wrap;              
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;              
 }
 
 /* Image Styling */
@@ -97,22 +98,33 @@ body {
 }
 
 .profile-image-container img.profile-image {
-    width: 100%;        
-    height: 100%;       
+    width: 110%;        
+    height: 110%;       
     object-fit: cover;
 }
 
 /* Text styling inside inline-header */
+.inline-header {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+    
 .inline-header h2 {
     font-size: 2rem;       
     font-weight: 600;
     color: #2B435A;
     text-align: center;    
-    margin: 0 auto 2rem auto;
-    max-width: 900px;
-    padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
+.inline-header p {
+    font-size: 1.1rem;
+    color: #8A8E75;
+    line-height: 1.6;
+    margin: 0;
+}
 /* Main Content Area */
 .main-content-area {
     flex: 1;
