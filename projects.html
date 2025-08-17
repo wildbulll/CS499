@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacey Griggs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <header class="center-header">
+        <h1>Projects</h1>
+    </header>
+
+    <main class="main-content-area">
+        <div class="carousel" id="projects-carousel">
+            <button class="carousel-btn carousel-btn-left" aria-label="Previous Slide">&#10094;</button>
+
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <!-- Slide 1 -->
+                    <li class="carousel-slide current-slide">
+                        <img src="assets/images/capstone.png" alt="Capstone Project Screenshot" class="carousel-image">
+                        <h3>CS499 Capstone</h3>
+                        <p>My computer science capstone project, featuring algorithms, databases, and web applications.</p>
+                        <a href="https://wildbulll.github.io/CS499/" target="_blank" class="github-link">View Project</a>
+                    </li>
+
+                    <!-- Slide 2 -->
+                    <li class="carousel-slide">
+                        <img src="assets/images/dashboard.png" alt="Rescue Dashboard Screenshot" class="carousel-image">
+                        <h3>Grasioso Salvare Dashboard</h3>
+                        <p>Python Dash dashboard to find rescue dogs, with sorting, filtering, and interactive charts.</p>
+                        <a href="https://github.com/wildbulll/CS340" target="_blank" class="github-link">View Repo</a>
+                    </li>
+
+                    <!-- Slide 3 -->
+                    <li class="carousel-slide">
+                        <img src="assets/images/algorithms.png" alt="Algorithms Demo Screenshot" class="carousel-image">
+                        <h3>Algorithms & Data Structures</h3>
+                        <p>Interactive demos of search, sort, and the Haversine formula for geographic calculations.</p>
+                        <a href="dsa.enhancement.html" target="_blank" class="github-link">Learn More</a>
+                    </li>
+                    <!-- Add more slides as needed -->
+                </ul>
+            </div>
+
+            <button class="carousel-btn carousel-btn-right" aria-label="Next Slide">&#10095;</button>
+        </div>
+        <div class="container-center-link">
+            <a class="github-link" href="contact.html" target="_blank">Contact me</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Created by Stacey Griggs: 07/05/2025 &copy; All rights reserved.</p>
+    </footer>
+
+    <script src="carousel.js" defer></script>
+</body>
+</html>
